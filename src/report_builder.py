@@ -6,8 +6,8 @@ class ReportBuilder:
         self.results = results_dict
 
     def export_cleaned_csv(self, path):
-        self.df.to_csv(path, index=False)
+        self.df.to_csv(path)
 
     def export_results_json(self, path):
         with open(path, 'w', encoding='utf-8') as f:
-            json.dump(self.results, f, ensure_ascii=False, indent=4)
+            json.dump(self.results, f, indent=4)
