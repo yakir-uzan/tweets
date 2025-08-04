@@ -42,6 +42,7 @@ class DataAnalyzer:
 
 
 
+
 da = DataAnalyzer("C:/Users/yakir/PycharmProjects/tweets/data/tweets_dataset.csv")
 print(da.total_tweets())
 print(da.average_length())
